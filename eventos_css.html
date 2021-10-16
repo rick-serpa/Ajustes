@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos_CSS</title>
+    <style>
+
+        #meu_id:hover {
+           border: 1px dashed blue; 
+           text-decoration: line-through;
+        }
+
+        .feito{
+            color: #00ff00;
+
+        }
+
+        .impedimento{
+           color: red; 
+        }
+        .impedimento:hover{
+            background-color: lightgrey;
+        }
+        .impedimento:hover::after{
+            content:  "(não to conseguindo)";
+        }
+    </style>
+</head>
+<body>
+    <h1>Eventos CSS</h1>
+
+<p id="meu_id">Teste 1 de eventos</p> 
+
+<h2>Lista de coisas a fazer até o próximo sábado:</h2>
+<ol>
+<li class="feito">Visitar o site <a href="https://oliota.com" target="_blank">Oliota.com</a></li>
+<li class="impedimento">Ir na primeira aula de fudamentos de css</li>
+<li>Baixar o exemplo do link no final da aula</li>
+<li>Tentar replicar o resultado ou fazer algo que use os conceitos
+<ul>
+    <li>Estilizar todos os seletores (escolha 2)</li>
+    <li>Estilizar por id</li>
+    <li>Estilizar por classe</li>
+    <li>Somar varias classes em um elemento</li>
+    <li>Estilizar aglum evento (pode ser o hover</li>
+</ul>
+</li>
+</ol>
+</body>
+</html>
